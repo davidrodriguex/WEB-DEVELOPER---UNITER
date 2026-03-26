@@ -37,7 +37,7 @@ body {
     border-radius: 5px;
 }
 #content {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -45,15 +45,25 @@ body {
     background-color: #ffffff;
     padding: 15px;
     float: left;
-    width: 800px;
+    width: 70%;
+}
+#posts h2 {
+    color: rgb(38, 48, 138);
+    font-weight: bold;
+    font-size: 1.8em  
 }
 #posts img {
     width: 100%;
 }
+#posts p, .content-right p {
+    text-align: justify;
+}
+#posts a, .content-right a {
+    color: #3b41f1;
+}
 #right-side{
     float: right;
-    width: 300px;
-    height: 250px;
+    width: 28%;
 }
 .content-right {
     background-color: #ffffff;
@@ -65,6 +75,9 @@ body {
     color: rgb(190, 197, 255);
     padding: 5px;
     margin-bottom: 10px;
+}
+.content-right .post-right {
+    margin-bottom: 15px;
 }
 #footer{
     background-color: #ffffff;
