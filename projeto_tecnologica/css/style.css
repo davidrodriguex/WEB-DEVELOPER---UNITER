@@ -39,13 +39,16 @@ body {
 #content {
     width: 60%;
     margin: 0 auto;
-    margin-top: 20px;
+    padding: 15px;
 }
 #posts{
-    background-color: #ffffff;
-    padding: 15px;
     float: left;
     width: 70%;
+}
+.post {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 #posts h2 {
     color: rgb(38, 48, 138);
