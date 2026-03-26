@@ -61,6 +61,9 @@ body {
 #posts a, .content-right a {
     color: #3b41f1;
 }
+#posts a:hover, .content-right a:hover {
+    text-decoration: underline;
+}
 #right-side{
     float: right;
     width: 28%;
