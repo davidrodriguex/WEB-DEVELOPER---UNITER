@@ -37,9 +37,43 @@ body {
     border-radius: 5px;
 }
 #content {
-    background-color: #ffffff;
     width: 75%;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 20px;
+}
+#posts{
+    background-color: #ffffff;
+    padding: 15px;
+    float: left;
+    width: 800px;
+}
+#posts img {
+    width: 100%;
+}
+#right-side{
+    float: right;
+    width: 300px;
+    height: 250px;
+}
+.content-right {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.content-right h3 {
+    background-color: #3b41f1;
+    color: rgb(190, 197, 255);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#footer{
+    background-color: #ffffff;
+    color: rgb(38, 48, 138);
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+    width: 100%;
 }
