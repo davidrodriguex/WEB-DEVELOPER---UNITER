@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 1</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <div id="tarefas">
+        <label for="tarefa">Adicionar Tarefa:</label>
+        <input type="text" id="tarefa" name="tarefa">
+        <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+    <ul id="lista-tarefas"></ul>
+    <script>
+        function adicionarTarefa(){
+            const tarefaInput = document.getElementById('tarefa');
+            let tarefa = tarefaInput.value;
+            const listaTarefas = document.getElementById('lista-tarefas');
+            if(tarefa.trim() === ''){
+                alert('Por favor, insira uma tarefa válida.');
+                return;
+            }
+            let criarTarefa = document.createElement('li');
+            criarTarefa.textContent = tarefa;
+            listaTarefas.appendChild(criarTarefa);
+            tarefaInput.value = '';
+        }
+    </script>
+</body>
+</html>
