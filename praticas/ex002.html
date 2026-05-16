@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 2 - pag 1</title>
+</head>
+<body>
+    <form>
+        <h1>Cadastro Simples</h1>
+        <p id="nome" class="dados_form">
+            <label for="inome">Nome:</label>
+            <input type="text" name="inome" id="inome">
+        </p>
+        <p id="cidade" class="dados_form">
+            <label for="icidade">Cidade:</label>
+            <input type="text" name="icidade" id="icidade">
+        </p>
+        <button type="button" id="send" onclick="enviarDados()">Enviar</button>
+    </form>
+    <script>
+        function enviarDados(){
+            let nome = document.getElementById("inome").value;
+            let cidade = document.getElementById("icidade").value;
+            localStorage.setItem("nome", nome);
+            localStorage.setItem("cidade", cidade);
+            window.location.href = "dados.html";
+        }
+    </script>
+</body>
+</html>
